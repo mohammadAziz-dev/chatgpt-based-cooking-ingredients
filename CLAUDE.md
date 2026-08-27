@@ -27,7 +27,10 @@ Request flow: `IngredientController` (`POST /ingredients`, raw string body) → 
 ## Conventions
 
 - Follow the existing Controller → Service structure.
+  - This applies to new registration logic as well.
 - Use constructor injection.
+- Do not change unrelated existing endpoints.
+- Passwords must never be stored in plain text.
 
 ## Off limits
 
